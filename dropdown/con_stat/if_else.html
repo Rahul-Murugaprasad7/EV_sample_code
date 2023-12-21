@@ -1,0 +1,20 @@
+<body style="background-color: black">
+<h1 style="color: white">If-Else Program</h1>
+<H4 style="color:wheat">Click the button to check eligibility to vote:</H4>
+    <input style="padding: 17px" type="number" id="age">
+    <button onclick="checkage()"><H5>Check</H5></button>
+        <p style="color: aquamarine" id="eligible"></p>
+
+  <script>
+    function checkage() {
+      var number = document.getElementById("age").value
+      if (number>=18) {
+        document.getElementById("eligible").innerText = "YOU ARE ELIGIBLE TO VOTE !!!"
+      } 
+      else {
+        document.getElementById("eligible").innerText = "OOPS! YOU ARE TO ELIGIBLE TO VOTE"
+      }
+    }
+  </script>
+
+</body>

@@ -1,0 +1,19 @@
+<body>
+  <h2>Countdown</h2>
+  <input type="number" id="rev">
+  <button onclick="countdown()">Start Countdown</button>
+  <p id="result"></p>
+  <script>
+    function countdown() {
+      var count = document.getElementById("rev").value
+
+      var output = "YOUR COUNT_DOWN STARTS:"
+      do {
+        output += count + " "
+        count--
+      } while (count > 0)
+      document.getElementById("result").textContent = output
+    }
+  </script>
+</body>
+</html>

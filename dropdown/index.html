@@ -1,0 +1,88 @@
+<title>Drop_Down</title>
+<body>
+	<style>
+h1{
+    color: #000000;
+    background: #78adf7;
+    background-position: 100px;
+
+}
+body{
+    background-color: #000000;
+}
+
+</style>
+
+<h1 style="text-align: center">My_DropDown_pages</h1>
+
+<select id="page1">
+    <option>CONDITION_STATEMENTS</option>
+<option value="http://127.0.0.1:5500/dropdown/con_stat/do_while.html">DO_WHILE</option>
+<option value="http://127.0.0.1:5500/dropdown/con_stat/if_else.html">IF_ELSE</option>
+<option value="http://127.0.0.1:5500/dropdown/con_stat/switch.html">SWITCH_CASES</option>
+</select>
+
+<select id="page2">
+    <option>EVENTS</option>
+<option value="http://127.0.0.1:5500/dropdown/events/onchange.html">ONCHANGE</option>
+<option value="http://127.0.0.1:5500/dropdown/events/onclick.html">ONCLICK</option>
+</select>
+
+<select id="page3">
+    <option>FUNCTIONS</option>
+<option value="http://127.0.0.1:5500/dropdown/function/arrow.html">ARROW_FUNCTION</option>
+<option value="http://127.0.0.1:5500/dropdown/function/decl.html">FUNCTIO_DECLARATION</option>
+<option value="http://127.0.0.1:5500/dropdown/function/generator.html">GENERATOR_FUNCTION</option>
+</select>
+
+<select id="page4">
+    <option>OPERATORS</option>
+<option value="http://127.0.0.1:5500/dropdown/OPERATORS/ADD.HTML">ADD_OPERATOR</option>
+<option value="http://127.0.0.1:5500/dropdown/OPERATORS/logical.HTML">LOGICAL_OPERATOR</option>
+</select>
+
+<select id="page5">
+    <option>VARIABLES</option>
+<option value="http://127.0.0.1:5500/dropdown/variables/l&g_var.html">LOCAL&GLOBAL_OPERATORS</option>
+</select>
+
+<select id="subDropdown" style="display: none"></select>
+
+<script>
+      document.getElementById("page1").onchange = function() {
+      var url = this.value
+      if (url !== "") {
+        window.open(url)
+          }
+    }
+    
+    document.getElementById("page2").onchange = function() {
+      var url = this.value
+      if (url !== "") {
+        window.open(url)
+          }
+    }
+
+    document.getElementById("page3").onchange = function() {
+      var url = this.value
+      if (url !== "") {
+        window.open(url)
+          }
+    }
+
+    document.getElementById("page4").onchange = function() {
+      var url = this.value
+      if (url !== "") {
+        window.open(url)
+          }
+    }
+
+    document.getElementById("page5").onchange = function() {
+      var url = this.value
+      if (url !== "") {
+        window.open(url)
+          }
+    }
+
+</script>
+</body>

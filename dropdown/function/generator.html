@@ -1,0 +1,24 @@
+<h1>Generator_Function</h1>
+<p id="output"></p>
+<button onclick="assign()" id="btn">Generate_Button</button>
+
+<script>
+
+function* generator() {
+  let i = 0
+  while (true) {
+    yield i++
+  }
+}
+
+let gen = generator()
+
+function assign() {
+
+  let outputElement = document.getElementById("output")
+  outputElement.textContent = gen.next().value
+  document.getElementById("btn")
+
+}
+
+</script>

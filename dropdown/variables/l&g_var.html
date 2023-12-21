@@ -1,0 +1,19 @@
+<h1>Global and Local Variable</h1>
+
+<button id="globalBtn">Global Variable</button>
+<button id="localBtn">Local Variable</button>
+
+<p id="value"></p>
+
+<script>
+    document.getElementById("globalBtn").addEventListener("click", function() {
+    document.getElementById ("value").textContent = "I'm a global variable" 
+  })
+
+  function myFunction() {
+    document.getElementById("localBtn").addEventListener("click", function() {
+      document.getElementById("value").textContent = "I'm a local variable"
+    })}
+
+  myFunction()
+</script>

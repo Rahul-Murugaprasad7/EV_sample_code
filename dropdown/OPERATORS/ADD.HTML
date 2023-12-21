@@ -1,0 +1,19 @@
+<body>
+<H1>ADD OPERATORS</H1>
+<input id="num1" type="number" placeholder="enter number">
+<input id="num2" type="number" placeholder="enter number">
+<button onclick="addition()">ADD</button>
+<h3 id=" total"></h3>
+
+<script>
+   function addition()
+{
+    var num1 = parseFloat(document.getElementById("num1").value)
+    var num2 = parseFloat(document.getElementById("num2").value)
+   
+    var num3 = num1 + num2
+    document.getElementById(" total").textContent = "Total number is: " + num3
+
+}
+</script>
+</body>
